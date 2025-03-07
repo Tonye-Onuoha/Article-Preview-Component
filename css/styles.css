@@ -148,6 +148,10 @@ h2 {
     gap: 17.5px;
 }
 
+.share-icons img:hover {
+    cursor: pointer;
+}
+
 img[alt="facebook-icon"],
 img[alt="pinterest-icon"] {
     width: 22px;
