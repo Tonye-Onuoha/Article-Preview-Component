@@ -7,9 +7,11 @@ const mobileShareButton = document.querySelector(".button-2 > img");
 
 desktopShareButton.addEventListener("click", (e) => {
     if (window.outerWidth >= 850 && e.currentTarget.style.backgroundColor == "rgb(236, 242, 248)") {
-        desktopShareButton.style.backgroundColor = "rgb(158, 175, 194)";
+        desktopShareButton.src = "images/icon-share-2.svg";
+        desktopShareButton.style.backgroundColor = "rgb(72, 85, 106)";
         articleShareDesktop.style.display = "flex";
-    } else if (window.outerWidth >= 834 && e.currentTarget.style.backgroundColor == "rgb(158, 175, 194)") {
+    } else if (window.outerWidth >= 834 && e.currentTarget.style.backgroundColor == "rgb(72, 85, 106)") {
+        desktopShareButton.src = "images/icon-share.svg";
         desktopShareButton.style.backgroundColor = "rgb(236, 242, 248)";
         articleShareDesktop.style.display = "none";
     } else {
@@ -18,6 +20,7 @@ desktopShareButton.addEventListener("click", (e) => {
         shareContainer.style.backgroundColor = "hsl(217, 19%, 35%)";
     }
 });
+
 mobileShareButton.addEventListener("click", () => {
     articleInfo.style.display = "flex";
     articleShareMobile.style.display = "none";
