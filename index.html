@@ -29,41 +29,55 @@
   <body>
     <main>
       <div class="container manrope-font">
-        <div class="image-container">
-          <img src="images/drawers.jpg" alt="drawers-image" />
-        </div>
-        <div class="content-container">
-          <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
-
-          <p>
-            Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve
-            got some simple tips to help you make any room feel complete.
-          </p>
-        </div>
-        <div class="share-container">
-          <div class="article-info" style="display: none">
-            <div class="article-author-image">
-              <img src="images/avatar-michelle.jpg" alt="article-author" />
-            </div>
-            <div class="article-author-and-date">
-              <p>Michelle Appleton</p>
-              <p>28 Jun 2020</p>
-            </div>
-            <div class="article-share-button button-1">
-              <img src="images/icon-share.svg" alt="share-button" />
-            </div>
+        <div class="image-layout">
+          <div class="image-container">
+            <img src="images/drawers.jpg" alt="drawers-image" />
           </div>
-          <div class="article-share">
-            <div class="share-message">
-              <p>Share</p>
+        </div>
+        <div class="content-layout">
+          <div class="content-container">
+            <h2>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+
+            <p>
+              Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting.
+              I’ve got some simple tips to help you make any room feel complete.
+            </p>
+          </div>
+          <div class="share-container">
+            <div class="article-info">
+              <div class="article-author-image">
+                <img src="images/avatar-michelle.jpg" alt="article-author" />
+              </div>
+              <div class="article-author-and-date">
+                <p>Michelle Appleton</p>
+                <p>28 Jun 2020</p>
+              </div>
+              <div class="article-share-button button-1">
+                <img src="images/icon-share.svg" alt="share-button" style="background-color: hsl(210, 46%, 95%)" />
+              </div>
             </div>
-            <div class="share-icons">
-              <img src="images/icon-facebook.svg" alt="facebook-icon" />
-              <img src="images/icon-twitter.svg" alt="twitter-icon" />
-              <img src="images/icon-pinterest.svg" alt="pinterest-icon" />
+            <div class="article-share" style="display: none">
+              <div class="share-message">
+                <p>Share</p>
+              </div>
+              <div class="share-icons">
+                <img src="images/icon-facebook.svg" alt="facebook-icon" />
+                <img src="images/icon-twitter.svg" alt="twitter-icon" />
+                <img src="images/icon-pinterest.svg" alt="pinterest-icon" />
+              </div>
+              <div class="article-share-button button-2">
+                <img src="images/icon-share-2.svg" alt="share-button" style="background-color: hsl(212, 23%, 69%)" />
+              </div>
             </div>
-            <div class="article-share-button button-2">
-              <img src="images/icon-share-2.svg" alt="share-button" />
+            <div id="pop-up" class="article-share" style="display: none">
+              <div class="share-message">
+                <p>Share</p>
+              </div>
+              <div class="share-icons">
+                <img src="images/icon-facebook.svg" alt="facebook-icon" />
+                <img src="images/icon-twitter.svg" alt="twitter-icon" />
+                <img src="images/icon-pinterest.svg" alt="pinterest-icon" />
+              </div>
             </div>
           </div>
         </div>
@@ -75,5 +89,6 @@
       >. Coded by <a href="https://github.com/Tonye-Onuoha"><b>Tonye Hugo Onuoha</b></a
       >.
     </div>
+    <script src="js/article-preview.js"></script>
   </body>
 </html>
