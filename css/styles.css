@@ -30,6 +30,8 @@ h2 {
 
 .container {
     max-width: 85%;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-container {
@@ -60,17 +62,19 @@ h2 {
     color: hsl(214, 17%, 51%);
 }
 
+.share-container {
+    position: relative;
+    padding: 1.5em 2em;
+    box-sizing: border-box;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffffff;
+}
+
 .article-info,
 .article-share {
     display: flex;
-    padding: 1.5em 2em;
     gap: 17.5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.article-info {
-    background-color: #ffffff;
 }
 
 .article-author-image {
@@ -83,8 +87,8 @@ h2 {
 .article-author-image > img {
     width: 95%;
     height: 95%;
-    object-fit: cover;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .article-author-and-date {
@@ -115,18 +119,6 @@ h2 {
     border-radius: 50%;
 }
 
-.button-1 > img {
-    background-color: hsl(210, 46%, 95%);
-}
-
-.button-2 > img {
-    background-color: hsl(212, 23%, 69%);
-}
-
-.article-share {
-    background-color: hsl(217, 19%, 35%);
-}
-
 .share-message {
     width: 30%;
     display: flex;
@@ -148,7 +140,8 @@ h2 {
     gap: 17.5px;
 }
 
-.share-icons img:hover {
+.share-icons > img:hover,
+.article-share-button > img:hover {
     cursor: pointer;
 }
 
