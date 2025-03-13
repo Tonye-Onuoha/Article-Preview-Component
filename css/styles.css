@@ -4,8 +4,8 @@ html {
 
 body {
     height: 100%;
-    font-size: 13px;
     margin: 0;
+    font-size: 13px;
     background-color: hsl(210, 46%, 95%);
 }
 
@@ -38,7 +38,7 @@ h2 {
     height: 250px;
 }
 
-.image-container img {
+.image-container > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -154,4 +154,102 @@ img[alt="pinterest-icon"] {
 img[alt="twitter-icon"] {
     width: 22px;
     height: 19px;
+}
+
+/* POP-UP SHARE DISPLAY */
+
+#pop-up {
+    gap: 5px;
+    width: 35%;
+    height: 35.85px;
+    position: absolute;
+    top: -50%;
+    right: -9%;
+    padding: 0.8em;
+    border-radius: 10px;
+    background-color: hsl(217, 19%, 35%);
+}
+
+#pop-up > .share-message {
+    width: 40%;
+}
+
+#pop-up > .share-icons {
+    width: 60%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 834px) {
+    .container {
+        flex-direction: row;
+    }
+    .image-layout {
+        width: 37.5%;
+    }
+    .image-container {
+        height: 100%;
+    }
+    .image-container img {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .content-layout {
+        width: 62.5%;
+    }
+    .content-container {
+        border-top-right-radius: 10px;
+        font-size: 1.5vw;
+    }
+    .share-container {
+        border-bottom-left-radius: 0;
+    }
+    .article-author-and-date {
+        font-size: 1.5vw;
+    }
+    .article-share-button > img {
+        padding: 1.5vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        height: 50vh;
+        max-width: 75vw;
+    }
+    .image-layout {
+        height: 100%;
+    }
+    .content-layout {
+        height: 100%;
+    }
+    .content-container {
+        height: 70%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .share-container {
+        height: 30%;
+        width: 100%;
+    }
+    .article-info,
+    .article-share {
+        height: 100%;
+    }
+    .article-author-image > img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .content-container > h2 {
+        font-size: 27.25px;
+    }
+    .content-container > p,
+    .article-author-and-date {
+        font-size: 20px;
+    }
 }
