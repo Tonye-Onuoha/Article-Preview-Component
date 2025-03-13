@@ -25,7 +25,7 @@ page.
 
 ### Links
 
-- Live Site URL: [Vercel](article-preview-component-steel-six.vercel.app)
+- Live Site URL: [Vercel](https://article-preview-component-steel-six.vercel.app)
 
 ## My process
 
